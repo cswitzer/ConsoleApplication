@@ -33,9 +33,31 @@ namespace ConsoleApplication
             Console.WriteLine("There are " + numDaysTilChristmas + " 'til Christmas!");
 
             // step 6
-
+            CalcGlazerDimensions();
 
             Console.ReadKey();
+        }
+
+        static void CalcGlazerDimensions()
+        {
+            double width, height, woodLength, glassArea;
+            string widthString, heightString;
+
+            Console.Write("Enter the window's width in metres: ");
+            widthString = Console.ReadLine();
+            width = double.Parse(widthString);
+
+            Console.Write("Enter the window's height in metres: ");
+            heightString = Console.ReadLine();
+            height = double.Parse(heightString);
+
+            woodLength = 2 * (width * height) * 3.25;
+            glassArea = width * height;
+
+            Console.WriteLine("The length of the wood is " +
+                woodLength + " feet");
+            Console.WriteLine("The area of the glass is " +
+                glassArea + " square metres");
         }
     }
 }

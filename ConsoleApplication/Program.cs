@@ -35,6 +35,7 @@ namespace ConsoleApplication
             // step 6
             CalcGlazerDimensions();
 
+            // step 7 again
             Console.ReadKey();
         }
 
@@ -43,10 +44,12 @@ namespace ConsoleApplication
             double width, height, woodLength, glassArea;
             string widthString, heightString;
 
+            // step 7 ... 
             Console.Write("Enter the window's width in metres: ");
             widthString = Console.ReadLine();
             width = double.Parse(widthString);
 
+            // ... step 7
             Console.Write("Enter the window's height in metres: ");
             heightString = Console.ReadLine();
             height = double.Parse(heightString);
